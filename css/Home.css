@@ -41,9 +41,3 @@ nav>ul{
   height: 75vh;
   display: flex;
 }
-@media screen and (max-width:1500px){
-  .name{
-    margin-top: 250px;
-    float: right;
-  }
-}
