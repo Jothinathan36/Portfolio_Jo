@@ -41,34 +41,9 @@ nav>ul{
   height: 75vh;
   display: flex;
 }
-@media (min-width:1281px){
-  
-}
-@media (min-width:1025px){
-
-}
-@media (min-width:961px){
-
-}
-@media (min-width:641px){
-
-}
-@media (min-width:481px){
-  .navi{
-    display: none;
+@media screen and (max-width:1500px){
+  .name{
+    margin-top: 250px;
+    float: right;
   }
-  #main{
-    margin: 0%;
-    border: 2px solid wheat;
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .pro_pic{
-    height: auto;
-    width: 100vw;
-  }
-}
-@media (min-width:320px){
-
 }
