@@ -2,41 +2,70 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  background-color: rgb(30, 30, 30);
-  font-family: "poppins";
+  background-color: rgb(32, 32, 32);
   color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Poppins', sans-serif;
 }
-.navi{
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+/* Navigation things */
+.Logo{
+  width: 200px;
+  position: absolute;
+  top: -30px;
+  left: 30px;
 }
-nav>ul{
+.Navi{
+  display: block;
+  padding: 4% 6%;
+  text-align: right;
+  z-index: 2;
+}
+.Navi ul{
+  display: inline-flex;
+  gap: 50px;
+}
+.Navi ul li{
   list-style: none;
+}
+.Navi a{
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 100;
+}
+.Navi a::after{
+  content: '';
+  display: block;
+  background-color: bisque;
+  height: 1px;
+  width: 0%;
+  transition: 0.5s;
+}
+.Navi a:hover::after{
+  width: 100%;
+}
+/* Profile */
+.Pro_Box{
   display: flex;
-  gap: 35px;
-  margin-right: 70px;
+  margin-left: 15%;
+  margin-right: 10%;
+  height: 70vh;
 }
-.name{
-  font-size: x-large;
+.Name{
+  margin-top: 23%;
+  font-style: italic;
+  flex: 1;
   float: left;
 }
-.name>h1{
-  margin-top: 250px;
-  float: left;
-}
-.pro_pic{
-  height: 74.5vh;
+.Pro_Pic{
+  width: auto;
+  height: 100%;
   float: right;
 }
-#head{
-  height: 100vh;
+.Name h1{
+  
+  font-size: xx-large;
 }
-#main{
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 75vh;
-  display: flex;
+.Name h3{
+  font-weight: lighter;
+  font-size: larger;
 }
