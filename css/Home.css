@@ -25,11 +25,11 @@ nav>ul{
 }
 .name>h1{
   margin-top: 250px;
-  float: right;
+  float: left;
 }
 .pro_pic{
   height: 74.5vh;
-  float: left;
+  float: right;
 }
 #head{
   height: 100vh;
