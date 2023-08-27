@@ -9,46 +9,52 @@
 }
 /* Navigation things */
 .Logo{
+  z-index: 1;
   width: 200px;
   position: absolute;
   top: -30px;
   left: 30px;
 }
 .Navi{
-  display: block;
-  padding: 4% 6%;
-  text-align: right;
-  z-index: 2;
+  height: 100px;
 }
-.Navi ul{
-  display: inline-flex;
-  gap: 50px;
+.Nav_items{
+  position: absolute;
+  right: 50px;
+  top: 50px;
 }
-.Navi ul li{
-  list-style: none;
-}
-.Navi a{
+.Nav_items li{
+  display: inline-block;
+  margin-right: 35px;
   text-decoration: none;
+}
+.Nav_items a{
+  font-family: 'poppins',sans-serif;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: transparent;
 }
 .Navi a::after{
   content: '';
   display: block;
   background-color: bisque;
-  height: 1px;
+  height: 1.5px;
   width: 0%;
   transition: 0.5s;
 }
 .Navi a:hover::after{
+  cursor: pointer;
   width: 100%;
 }
 /* Profile */
 .Pro_Box{
   display: flex;
+  flex-wrap: wrap;
   margin-left: 15%;
   margin-right: 10%;
   height: 70vh;
+  justify-content: center;
 }
 .Name{
   margin-top: 23%;
@@ -57,15 +63,99 @@
   float: left;
 }
 .Pro_Pic{
+  position: relative;
+  top: -10px;
   width: auto;
   height: 100%;
   float: right;
 }
 .Name h1{
-  
   font-size: xx-large;
 }
 .Name h3{
   font-weight: lighter;
   font-size: larger;
+}
+.Navi .fa{
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .Header{
+    width: 100vw;
+  }
+  .Logo{
+    width: 120px;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    z-index: 1;
+  }
+  .Nav_items li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    padding: 20px 30px;
+    background-color: #fff;
+  }
+  .Nav_items{
+    padding: 50px;
+    position: absolute;
+    right: -250px;
+    top: 0px;
+    background-color: #fff;
+    width: 250px;
+    height: 100vh;
+    text-align: left;
+    z-index: 2;
+    display: none;
+    transform: 1s;
+  }
+  #NavItems{
+    transition: 1s;
+  }
+  .Nav_items a{
+    color: black;
+  }
+  .Pro_Box{
+    height: auto;
+  }
+  .Pro_Pic{
+    width: 400px;
+  }
+  .Name{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Name h1{
+    font-size: x-large;
+  }
+  .Name h3{
+    font-weight: lighter;
+    font-size: medium;
+  }
+  .Navi .fa{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+  }
+  .Navi .fa-times{
+    z-index: 3;
+    background-color: transparent;
+    color: black;
+  }
+  .Pro_Box{
+    margin-left: 0%;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
