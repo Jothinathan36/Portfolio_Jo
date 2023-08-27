@@ -82,6 +82,9 @@
 
 
 @media screen and (max-width: 600px) {
+  .Header{
+    width: 100vw;
+  }
   .Logo{
     width: 120px;
     position: absolute;
@@ -137,8 +140,8 @@
   }
   .Navi .fa{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
     display: block;
     color: rgb(255, 255, 255);
     font-size: 22px;
