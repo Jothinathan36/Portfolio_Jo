@@ -108,6 +108,9 @@
     text-align: left;
     z-index: 2;
     display: none;
+    transform: 1s;
+  }
+  #NavItems{
     transition: 1s;
   }
   .Nav_items a{
@@ -144,5 +147,12 @@
     z-index: 3;
     background-color: transparent;
     color: black;
+  }
+  .Pro_Box{
+    margin-left: 0%;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
